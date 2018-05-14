@@ -1,0 +1,13 @@
+<h1>Add new car</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <%= simple_form_for @car do |c| %>
+        <%= c.input :name %>
+        <%= c.input :model %>
+        <%= c.input :description %>
+        <%= c.button :submit, class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>
