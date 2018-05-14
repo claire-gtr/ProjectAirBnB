@@ -1,0 +1,11 @@
+<%= form_for(@car) do |c| %>
+  <%= t.label :name %>
+  <%= t.text_field :name %>
+  <%= t.label :description %>
+  <%= t.text_field :description %>
+  <%= t.label :model%>
+  <%= t.text_field :model %>
+  <%= t.label :address %>
+  <%= t.text_field :address %>
+  <%= t.submit %>
+<% end %>
