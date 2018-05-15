@@ -1,10 +1,12 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-      <%= cl_image_tag @car.photo, height: 300, width: 400, crop: :fill %>
       <h1><%= @car.name %></h1>
+      <p><%= @car.model %></p>
       <p><%= @car.description %></p>
+      <p><%= @car.user.email %></p>
     </div>
   </div>
 </div>
 
+<%=link_to "Back to all cars", cars_path %>
