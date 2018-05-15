@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 puts 'Cleaning database...'
 Car.destroy_all
-kevin = User.create!(email: "kevin@gmail.com", password: "kekedu38")
+kevin = User.create!(email: "kevin@wanadoo.com", password: "kekedu38")
 
 
 puts 'Creating cars...'

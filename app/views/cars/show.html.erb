@@ -1,13 +1,22 @@
+<br>
+
+
 <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-      <h1><%= @car.name %></h1>
-      <p><%= @car.model %></p>
-      <p><%= @car.description %></p>
-      <p><%= @car.user.email %></p>
-    </div>
-  </div>
-</div>
+    <div class="col-xs-12 col-md-6">
+      <div class="card">
+        <h1><%= @car.name %></h1>
+        <h2><%= @car.model %></h2>
+        <p><%= @car.description %></p>
+        <p><%= @car.user.email %></p>
+      </div>
+      <%= simple_form_for([@car, @booking]) do |f| %>
+      <%= f.input :start_date, as: :date, html5: true %>
 
-<%=link_to "Edit my car", edit_car_path %>
-<%=link_to "Back to all cars", root_path %>
+      <%= f.button :submit, class: "btn btn-primary"  %>
+      <% end %>
+    </div>
+    <img src="https://static.canalblog.com/storagev1/aurelietorralba.canalblog.com/ibiza_ace.jpg" alt="kevin">
+  </div>
+
+  <%=link_to "Retour", root_path, class: "btn btn-info" %>
