@@ -2,11 +2,11 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <%= simple_form_for @car do |c| %>
-        <%= c.input :name %>
-        <%= c.input :model %>
-        <%= c.input :description %>
-        <%= c.button :submit, class: "btn btn-primary" %>
+      <%= simple_form_for @car do |f| %>
+        <%= f.input :name %>
+        <%= f.input :model %>
+        <%= f.input :description %>
+        <%= f.button :submit, class: "btn btn-primary" %>
       <% end %>
     </div>
   </div>

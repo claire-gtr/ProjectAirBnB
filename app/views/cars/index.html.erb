@@ -10,3 +10,8 @@
            <% end %>
         </div>
     </div>
+
+
+<% if user_signed_in? %>
+<%= link_to "Add a new car", new_car_path %>
+<% end %>
