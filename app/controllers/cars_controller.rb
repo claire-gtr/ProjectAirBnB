@@ -8,11 +8,11 @@ class CarsController < ApplicationController
   end
 
   def new
-    @cars = Car.new
+    @car = Car.new
   end
 
   def create
-    @car = Car.new(car_params)
+    @car = current_user.cars.new(car_params)
     if @car.save
       redirect_to car_path(@car)
     else
