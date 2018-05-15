@@ -8,7 +8,7 @@ class CarsController < ApplicationController
   end
 
   def new
-    @cars = Car.new
+    @car = Car.new
   end
 
   def create
